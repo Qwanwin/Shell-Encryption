@@ -57,7 +57,16 @@ cpan Crypt::Rijndael
 cpan MIME::QuotedPrint
 cpan Convert::UU
 ```
-
+### Get error CBC in termux 
+use manual Install
+```bash
+curl -L https://cpan.metacpan.org/authors/id/L/LD/LDS/Crypt-CBC-3.04.tar.gz -o Crypt-CBC.tar.gz
+tar xvf Crypt-CBC.tar.gz
+cd Crypt-CBC-3.04
+perl Makefile.PL
+make
+make install
+```
 ### Linux Installation
 ```bash
 # Update repository
@@ -348,3 +357,8 @@ Remember:
 - Use strong passwords
 - Make backups of important scripts
 - Don't share encryption keys in script
+
+###Use Simple comand Copy
+```perl
+perl bash-obfuscator.pl -i tes.sh -o secure.sh -E -K "password123" -S -C -F -M 3
+```
